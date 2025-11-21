@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NailRituals Book Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <div class="logo" aria-hidden="true"></div>
+                <span class="brand-text"><b>NAIL RITUALS</b></span>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+
+<nav class="site-nav" id="site-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="book.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <section class="hero small-hero">
+            <div class="hero-inner container reveal">
+                <h1>Book Your Appointment</h1>
+                <p class="lead">Fill the form below — appointment request will be captured locally (no server).</p>
+            </div>
+        </section>
+
+        <section class="section container reveal">
+            <div class="two-col">
+                <div>
+                    <h2>Book Now</h2>
+                    <p class="muted">Choose your service, date, and time. We'll confirm availability.</p>
+
+                    <form id="booking-form" onsubmit="return validateBooking()">
+
+    <input id="name" name="name" type="text" placeholder="Your name">
+    <span class="error" id="nameError"></span>
+
+    <input id="phone" name="phone" type="tel" placeholder="Phone number">
+    <span class="error" id="phoneError"></span>
+
+    <input id="email" name="email" type="email" placeholder="Email (optional)">
+    <span class="error" id="emailError"></span>
+
+    <label>Service</label>
+    <input id="service" name="service" type="text" placeholder="Service">
+    <span class="error" id="serviceError"></span>
+
+    <label>Preferred Date</label>
+    <input id="date" name="date" type="date">
+    <span class="error" id="dateError"></span>
+
+    <label>Preferred Time</label>
+    <input id="time" name="time" type="time">
+    <span class="error" id="timeError"></span>
+
+    <textarea id="notes" name="notes" rows="4" placeholder="Any notes (optional)"></textarea>
+
+    <button type="submit" class="btn btn-primary">Request Booking</button>
+    <p id="booking-result" class="muted small"></p>
+
+</form>
+
+
+                </div>
+
+                <div class="booking-card">
+                    <!-- <img src="Booking.webp" alt="Book a session"> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container footer-inner">
+     <p> © <strong>NAIL RITUALS</strong></p>
+      <p> All rights reserved:2025</p>
+    </div>
+  </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <img id="lightbox-img" alt="">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Close">✕</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
